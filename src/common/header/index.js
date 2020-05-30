@@ -1,11 +1,7 @@
 import React from 'react';
+import NavItem from './NavItem';
 import { connect } from 'react-redux';
-import {
-  HeaderWrapper,
-  ImgWrapper,
-  NavigationWrapper,
-  NavItemWrapper,
-} from './style';
+import { HeaderWrapper, ImgWrapper, NavigationWrapper } from './style';
 
 const Header = (props) => {
   return (
@@ -14,7 +10,11 @@ const Header = (props) => {
       <NavigationWrapper>
         {props.navItemList.map((item) => {
           return (
-            <NavItemWrapper className='navitemwrapper'>{item}</NavItemWrapper>
+            <NavItem
+              className='navitemwrapper'
+              item={item.name}
+              dropdown={item.dropDown}
+            ></NavItem>
           );
         })}
       </NavigationWrapper>
