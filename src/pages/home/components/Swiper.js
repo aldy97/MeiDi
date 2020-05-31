@@ -8,7 +8,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 function Swiper(props) {
   return (
     <Carousel
-      autoPlay={5000}
+      autoPlay={3000}
       animationSpeed={1000}
       infinite
       stopAutoPlayOnHover

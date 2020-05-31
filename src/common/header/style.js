@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const ImgWrapper = styled.div`
-  width: calc(35vw);
+  width: calc(33.5vw);
   height: 95px;
   background: url(${Logo}) no-repeat center center;
   float: left;
