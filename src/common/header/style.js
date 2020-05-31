@@ -27,7 +27,7 @@ export const NavItemWrapper = styled.div`
   text-align: center;
   cursor: pointer;
   font-size: 16px;
-  color: #696969;
+  color: #333;
   &.navitemwrapper: hover {
     background: #228b22;
     color: #fff;
@@ -38,8 +38,11 @@ export const NavItemDropDownWrapper = styled.div`
   width: calc(9.28vw);
   text-align: center;
   cursor: pointer;
-  background: #228b22;
+  background: #333;
   margin-top: -5px;
+  position: absolute;
+  z-index: 9999;
+  opacity: 0.8;
 `;
 
 export const NavItemDropDownItem = styled.div`
@@ -50,6 +53,6 @@ export const NavItemDropDownItem = styled.div`
   line-height: 30px;
   cursor: pointer;
   &.navitemdropdownitem: hover {
-    background: #32cd32;
+    color: #228b22;
   }
 `;

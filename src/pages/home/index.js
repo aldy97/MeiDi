@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import Swiper from './components/Swiper';
-import { connect } from 'react-redux';
+import About from './components/About';
+import SelectedProjects from './components/SelectedProjects';
 
-function Home(props) {
-  return <Swiper></Swiper>;
+function Home() {
+  return (
+    <div>
+      <Swiper />
+      <About />
+      <SelectedProjects />
+    </div>
+  );
 }
 
-export default connect(null, null)(Home);
+export default Home;
