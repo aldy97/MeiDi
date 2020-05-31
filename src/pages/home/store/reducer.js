@@ -23,7 +23,7 @@ const defaultState = {
     {
       title: '工程设计',
       id: 0,
-      imgURL: require('/Users/fengxiong/Desktop/meidi/src/static/img/aboutIMG1.jpg'),
+      imgURL: require('../../../static/img/aboutIMG1.jpg'),
       desc: '美地拥有专业的园林设计师，为客户提供专业的设计服务。',
     },
     {
@@ -36,7 +36,7 @@ const defaultState = {
     {
       title: '施工服务',
       id: 2,
-      imgURL: require('/Users/fengxiong/Desktop/meidi/src/static/img/aboutIMG3.png'),
+      imgURL: require('../../../static/img/aboutIMG3.png'),
       desc: '美地的建筑师队伍拥有丰富的施工经验',
     },
   ],

@@ -64,6 +64,7 @@ export const AboutTextWrapper = styled.div`
   height: 493px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
   .background {
     width: 1210px;
     height: 493px;

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Logo from '../../static/img/headerImg.png';
 
 export const HeaderWrapper = styled.div`
   width: 100%;
@@ -9,8 +8,13 @@ export const HeaderWrapper = styled.div`
 export const ImgWrapper = styled.div`
   width: calc(33.5vw);
   height: 95px;
-  background: url(${Logo}) no-repeat center center;
   float: left;
+  cursor: pointer;
+  .logo {
+    width: calc(33.5vw);
+    height: 95px;
+    object-fit: contain;
+  }
 `;
 
 export const NavigationWrapper = styled.div`

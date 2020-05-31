@@ -6,7 +6,9 @@ import { HeaderWrapper, ImgWrapper, NavigationWrapper } from './style';
 const Header = (props) => {
   return (
     <HeaderWrapper>
-      <ImgWrapper></ImgWrapper>
+      <ImgWrapper>
+        <img className='logo' src={require('../../static/img/headerImg.png')} />
+      </ImgWrapper>
       <NavigationWrapper>
         {props.navItemList.map((item) => {
           return (

@@ -8,12 +8,7 @@ import '../swiperStyle.css';
 //首页最上方的走马灯
 function Swiper(props) {
   return (
-    <Carousel
-      autoPlay={3000}
-      animationSpeed={1500}
-      infinite
-      stopAutoPlayOnHover
-    >
+    <Carousel autoPlay={3000} animationSpeed={1500} infinite>
       {props.swiperImgList.map((item) => {
         return (
           <SlideWrapper>
