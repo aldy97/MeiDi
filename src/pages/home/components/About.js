@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import AboutText from './AboutText';
 import {
   AboutWrapper,
   AboutNavWrapper,
@@ -7,18 +8,29 @@ import {
   AboutNavItem,
 } from '../style';
 
+//位于轮播图正下方的三大业务领域
 function About(props) {
+  const [index, setIndex] = useState(0);
+
   return (
     <AboutWrapper>
       <AboutNavWrapper>
         <NavItemWrapper>
           {props.aboutInfoList.map((item) => {
             return (
-              <AboutNavItem className='aboutnavitem'>{item.title}</AboutNavItem>
+              <AboutNavItem
+                className='aboutnavitem'
+                onMouseEnter={() => {
+                  setIndex(item.id);
+                }}
+              >
+                {item.title}
+              </AboutNavItem>
             );
           })}
         </NavItemWrapper>
       </AboutNavWrapper>
+      <AboutText index={index}></AboutText>
     </AboutWrapper>
   );
 }

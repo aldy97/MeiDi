@@ -8,12 +8,25 @@ export const SlideWrapper = styled.div`
     height: 525px;
     object-fit: cover;
   }
+  .title {
+    position: absolute;
+    font-size: 48px;
+    color: #fff;
+    margin-left: calc(52.4vw);
+    margin-top: 400px;
+  }
+  .desc {
+    position: absolute;
+    font-size: 19px;
+    color: #fff;
+    margin-left: calc(52.8vw);
+    margin-top: 480px;
+  }
 `;
 
 export const AboutWrapper = styled.div`
   width: 100%;
   height: 572px;
-  border: 1px solid black;
 `;
 
 export const AboutNavWrapper = styled.div`
@@ -40,10 +53,35 @@ export const AboutNavItem = styled.div`
   cursor: pointer;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
   &.aboutnavitem: hover {
-    background: #666;
+    background: #a0a0a0;
     color: white;
+  }
+`;
+
+export const AboutTextWrapper = styled.div`
+  width: 1210px;
+  height: 493px;
+  margin-left: auto;
+  margin-right: auto;
+  .background {
+    width: 1210px;
+    height: 493px;
+    object-fit: cover;
+  }
+  .textWrapper {
+    margin-top: 443px;
+    width: 1210px;
+    background: black;
+    height: 50px;
+    opacity: 0.6;
+    position: absolute;
+    .text {
+      margin-left: 30px;
+      color: #fff;
+      line-height: 50px;
+      opacity: 1;
+    }
   }
 `;
 
