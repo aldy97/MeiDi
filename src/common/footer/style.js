@@ -10,6 +10,7 @@ export const Contact = styled.div`
   height: 50px;
   width: 30%;
   margin-left: calc(35vw);
+  margin-top: 10px;
   float: left;
   .contactus,
   .wechat,
@@ -34,7 +35,7 @@ export const Contact = styled.div`
 `;
 
 export const CopyRights = styled.div`
-  padding-top: 50px;
+  padding-top: 60px;
   text-align: center;
   color: #dddddd;
 `;
