@@ -7,7 +7,14 @@ const Header = (props) => {
   return (
     <HeaderWrapper>
       <ImgWrapper>
-        <img className='logo' src={require('../../static/img/headerImg.png')} />
+        <img
+          alt=''
+          className='logo'
+          src={require('../../static/img/headerImg.png')}
+          onClick={() => {
+            window.location.href = '/';
+          }}
+        />
       </ImgWrapper>
       <NavigationWrapper>
         {props.navItemList.map((item) => {
@@ -16,6 +23,7 @@ const Header = (props) => {
               className='navitemwrapper'
               item={item.name}
               dropdown={item.dropDown}
+              href={item.href}
             ></NavItem>
           );
         })}

@@ -12,15 +12,15 @@ export const SlideWrapper = styled.div`
     position: absolute;
     font-size: 48px;
     color: #fff;
-    margin-left: calc(52.4vw);
-    margin-top: 400px;
+    margin-left: calc(54.4vw);
+    margin-top: 320px;
   }
   .desc {
     position: absolute;
     font-size: 19px;
     color: #fff;
-    margin-left: calc(52.8vw);
-    margin-top: 480px;
+    margin-left: calc(54.8vw);
+    margin-top: 400px;
   }
 `;
 
@@ -66,13 +66,13 @@ export const AboutTextWrapper = styled.div`
   margin-right: auto;
   cursor: pointer;
   .background {
-    width: 1210px;
+    width: 1205px;
     height: 493px;
     object-fit: cover;
   }
   .textWrapper {
     margin-top: 443px;
-    width: 1210px;
+    width: 1205px;
     background: black;
     height: 50px;
     opacity: 0.6;
@@ -96,17 +96,15 @@ export const SelectedProjectsWrapper = styled.div`
   .sectionTitle {
     color: #333;
     width: calc(18vh);
-    height: 25%;
+    height: 20%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    line-height: calc(15vh);
+    line-height: calc(12.5vh);
     text-align: center;
     font-size: 24px;
     cursor: pointer;
-  }
-  .sectiontitle: hover {
-    color: yellow;
+    border: 1px solid black;
   }
 `;
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Swiper from './components/Swiper';
 import About from './components/About';
 import SelectedProjects from './components/SelectedProjects';

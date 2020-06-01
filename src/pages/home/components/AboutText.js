@@ -10,6 +10,7 @@ function AboutText(props) {
         <div className='text'>{props.aboutInfoList[props.index].desc}</div>
       </div>
       <img
+        alt=''
         className='background'
         src={props.aboutInfoList[props.index].imgURL}
       />
