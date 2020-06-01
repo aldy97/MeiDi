@@ -43,4 +43,26 @@ export const ContentWrapper = styled.div`
   width: 100%;
   height: 600px;
   background: #fff;
+  .title {
+    border: 1px solid black;
+    height: 80px;
+    line-height: 80px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #228b22;
+  }
+  .content {
+    margin-top: 20px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    color: #666;
+    p {
+      padding-bottom: 10px;
+    }
+  }
 `;

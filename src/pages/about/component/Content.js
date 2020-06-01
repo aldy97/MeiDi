@@ -5,7 +5,12 @@ import { ContentWrapper } from '../styled';
 function Content(props) {
   return (
     <ContentWrapper>
-      <div className=''>{props.navigation[props.index].desc}</div>
+      <div className='title'>{props.navigation[props.index].title}</div>
+      <div className='content'>
+        {props.navigation[props.index].content.map((item) => {
+          return <p>&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>;
+        })}
+      </div>
     </ContentWrapper>
   );
 }
