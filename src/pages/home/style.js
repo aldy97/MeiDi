@@ -87,14 +87,14 @@ export const AboutTextWrapper = styled.div`
 `;
 
 export const SelectedProjectsWrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 25px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
   height: 464px;
-  border: 1px solid black;
   .sectionTitle {
+    color: #333;
     width: calc(18vh);
     height: 25%;
     margin-left: auto;
@@ -111,17 +111,33 @@ export const SelectedProjectsWrapper = styled.div`
 `;
 
 export const ProjectWrapper = styled.div`
-  width: 300px;
-  height: 260px;
-  border: 1px solid black;
+  width: 350px;
+  height: 310px;
+  box-shadow: 0px 3px 3px #666;
+  border-bottom: 1px solid #d3d3d3;
 `;
 
 export const ImgSection = styled.div`
-  height: 160px;
-  border-bottom: 1px solid black;
+  height: 200px;
+  .project-img {
+    height: 200px;
+    width: 350px;
+    object-fit: cover;
+  }
 `;
 
 export const InfoSection = styled.div`
   height: 100px;
-  border-bottom: 1px solid black;
+  line-height: 40px;
+  .title {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #666;
+    margin-top: 12px;
+  }
+  .desc {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #999;
+  }
 `;

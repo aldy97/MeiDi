@@ -1,11 +1,17 @@
 import React from 'react';
 import { ProjectWrapper, ImgSection, InfoSection } from '../style';
 
-function SingleProject() {
+//首页精品项目单个轮播item
+function SingleProject(props) {
   return (
-    <ProjectWrapper>
-      <ImgSection></ImgSection>
-      <InfoSection></InfoSection>
+    <ProjectWrapper className='project'>
+      <ImgSection>
+        <img className='project-img' alt='' src={props.imgURL} />
+      </ImgSection>
+      <InfoSection>
+        <div className='title'>{props.title}</div>
+        <div className='desc'>{props.desc}</div>
+      </InfoSection>
     </ProjectWrapper>
   );
 }

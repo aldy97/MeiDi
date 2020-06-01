@@ -5,22 +5,30 @@ import { connect } from 'react-redux';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
+//首页精品项目区块
 function SelectedProjects(props) {
   return (
     <SelectedProjectsWrapper>
       <div className='sectionTitle'>精品项目</div>
-      <Carousel arrows slidesPerPage={3}>
-        <SingleProject></SingleProject>
-        <SingleProject></SingleProject>
-        <SingleProject></SingleProject>
-        <SingleProject></SingleProject>
-        <SingleProject></SingleProject>
-        <SingleProject></SingleProject>
+      <Carousel arrows infinite slidesPerPage={3}>
+        {props.projectList.map((item) => {
+          return (
+            <SingleProject
+              imgURL={item.imgURL}
+              title={item.title}
+              desc={item.desc}
+            />
+          );
+        })}
       </Carousel>
     </SelectedProjectsWrapper>
   );
 }
 
-const mapState = (state) => {};
+const mapState = (state) => {
+  return {
+    projectList: state.getIn(['home', 'projectList']),
+  };
+};
 
 export default connect(mapState, null)(SelectedProjects);
