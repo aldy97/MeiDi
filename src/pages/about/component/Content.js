@@ -1,6 +1,7 @@
 import React from 'react';
+import Carousel from '@brainhubeu/react-carousel';
 import { connect } from 'react-redux';
-import { ContentWrapper } from '../styled';
+import { ContentWrapper, PartnerLogoWrapper } from '../styled';
 
 function Content(props) {
   return (
@@ -10,6 +11,19 @@ function Content(props) {
         {props.navigation[props.index].content.map((item) => {
           return <p>&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>;
         })}
+        <Carousel
+          slidesPerPage={3}
+          arrows={props.index == 2 ? true : false}
+          infinite
+        >
+          {props.navigation[props.index].imgUrlList.map((item) => {
+            return (
+              <PartnerLogoWrapper>
+                <img alt='' className='partner-logo' src={item} />
+              </PartnerLogoWrapper>
+            );
+          })}
+        </Carousel>
       </div>
     </ContentWrapper>
   );

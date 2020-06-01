@@ -12,7 +12,7 @@ export const AboutImgWrapper = styled.div`
 
 export const NavigationWrapper = styled.div`
   width: 100%;
-  height: 600px;
+  height: 500px;
   background: #dcdcdc;
 `;
 
@@ -40,11 +40,11 @@ export const NavItem = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
+  padding-top: 40px;
   width: 100%;
-  height: 600px;
+  height: 400px;
   background: #fff;
   .title {
-    border: 1px solid black;
     height: 80px;
     line-height: 80px;
     width: 200px;
@@ -55,14 +55,25 @@ export const ContentWrapper = styled.div`
     color: #228b22;
   }
   .content {
+    width: 60%;
     margin-top: 20px;
-    width: 40%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
     color: #666;
     p {
       padding-bottom: 10px;
     }
+  }
+`;
+
+export const PartnerLogoWrapper = styled.div`
+  width: 200px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  .partner-logo {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
   }
 `;
