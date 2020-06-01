@@ -11,9 +11,9 @@ export const Contact = styled.div`
   width: 30%;
   margin-left: calc(35vw);
   float: left;
-  .contactUs,
+  .contactus,
   .wechat,
-  .aboutUs {
+  .aboutus {
     cursor: pointer;
     color: #dddddd;
     height: 50px;
@@ -22,11 +22,19 @@ export const Contact = styled.div`
     line-height: 50px;
     text-align: center;
   }
+  .contactus: hover {
+    color: #228b22;
+  }
+  .wechat: hover {
+    color: #228b22;
+  }
+  .aboutus: hover {
+    color: #228b22;
+  }
 `;
 
 export const CopyRights = styled.div`
-  height: 48px;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 50px;
+  text-align: center;
+  color: #dddddd;
 `;
