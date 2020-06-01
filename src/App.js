@@ -3,6 +3,7 @@ import store from './store/index.js';
 import Header from './common/header/index.js';
 import Footer from './common/footer/index.js';
 import Home from './pages/home/index';
+import About from './pages/about/index';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { GlobalStyle } from './style';
@@ -16,6 +17,7 @@ function App() {
           <BrowserRouter>
             <div>
               <Route path='/' exact component={Home}></Route>
+              <Route path='/about' exact component={About}></Route>
             </div>
           </BrowserRouter>
           <GlobalStyle />

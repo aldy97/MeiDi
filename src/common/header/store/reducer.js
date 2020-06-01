@@ -4,7 +4,7 @@ const defaultState = {
     {
       name: '关于美地',
       dropDown: ['公司简介', '公司文化', '公司资质', '合作伙伴'],
-      href: '',
+      href: '/about',
     },
     {
       name: '业务领域',
