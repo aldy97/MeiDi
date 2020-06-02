@@ -46,15 +46,15 @@ export const NavItemDropDownWrapper = styled.div`
   margin-top: -5px;
   position: absolute;
   z-index: 9999;
-  opacity: 0.8;
+  opacity: 0.7;
 `;
 
 export const NavItemDropDownItem = styled.div`
   width: calc(9.28vw);
   border-top: 1px solid #fff;
-  font-size: 12px;
-  height: 30px;
-  line-height: 30px;
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
   cursor: pointer;
   &.navitemdropdownitem: hover {
     color: #228b22;

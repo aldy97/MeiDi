@@ -13,7 +13,7 @@ function Content(props) {
         })}
         <Carousel
           slidesPerPage={3}
-          arrows={props.index == 2 ? true : false}
+          arrows={props.index === 2 ? true : false}
           infinite
         >
           {props.navigation[props.index].imgUrlList.map((item) => {
