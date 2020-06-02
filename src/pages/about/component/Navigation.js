@@ -11,6 +11,7 @@ function Navigation(props) {
     console.log('urlParams: ' + urlParams);
     const myParam = urlParams.get('value');
     console.log('myParam: ' + myParam);
+    document.title = '关于美地';
   });
 
   return (
@@ -20,7 +21,7 @@ function Navigation(props) {
           return (
             <NavItem
               className='navitem'
-              key={item.ic}
+              key={item.id}
               onClick={() => {
                 setIndex(item.id);
               }}
