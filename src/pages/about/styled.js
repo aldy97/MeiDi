@@ -25,7 +25,7 @@ export const NavSection = styled.div`
 
 export const NavItem = styled.div`
   float: left;
-  width: 24.6%;
+  width: 24%;
   height: 60px;
   border-left: 1px solid white;
   border-right: 1px solid white;
@@ -71,6 +71,7 @@ export const PartnerLogoWrapper = styled.div`
   height: 120px;
   margin-left: auto;
   margin-right: auto;
+  float: left;
   .partner-logo {
     width: 200px;
     height: 120px;

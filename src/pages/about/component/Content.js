@@ -7,13 +7,22 @@ function Content(props) {
   return (
     <ContentWrapper>
       <div className='title'>{props.navigation[props.index].title}</div>
-      <div className='content'>
+      <div
+        className='content'
+        style={
+          props.index === 1 || props.index === 2
+            ? { 'text-align': 'center' }
+            : null
+        }
+      >
         {props.navigation[props.index].content.map((item) => {
           return <p>&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>;
         })}
         <Carousel
+          stopAutoPlayOnHover
           slidesPerPage={3}
           arrows={props.index === 2 ? true : false}
+          autoPlay={props.index === 3 ? 1000 : null}
           infinite
         >
           {props.navigation[props.index].imgUrlList.map((item) => {
