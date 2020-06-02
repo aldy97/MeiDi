@@ -17,11 +17,12 @@ const Header = (props) => {
         />
       </ImgWrapper>
       <NavigationWrapper>
-        {props.navItemList.map((item) => {
+        {props.navItemList.map((item, i) => {
           return (
             <NavItem
               className='navitemwrapper'
               item={item.name}
+              key={i}
               dropdown={item.dropDown}
               href={item.href}
             ></NavItem>

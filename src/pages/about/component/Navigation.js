@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Content from './Content';
 import { connect } from 'react-redux';
 import { NavigationWrapper, NavSection, NavItem } from '../styled';
 
 function Navigation(props) {
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('value');
+  });
 
   return (
     <NavigationWrapper>
@@ -13,6 +18,7 @@ function Navigation(props) {
           return (
             <NavItem
               className='navitem'
+              key={item.ic}
               onClick={() => {
                 setIndex(item.id);
               }}
