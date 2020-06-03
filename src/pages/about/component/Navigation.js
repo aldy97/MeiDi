@@ -8,10 +8,9 @@ function Navigation(props) {
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    console.log('urlParams: ' + urlParams);
     const myParam = urlParams.get('value');
-    console.log('myParam: ' + myParam);
     document.title = '关于美地';
+    setIndex(myParam);
   });
 
   return (

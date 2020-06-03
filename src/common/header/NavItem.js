@@ -20,9 +20,6 @@ function NavItem(props) {
       onMouseEnter={handleMouseEvent}
       onMouseLeave={handleMouseEvent}
       className='navitemwrapper'
-      onClick={() => {
-        window.location.href = props.href;
-      }}
     >
       {props.item}
       {showDropDown(show)}
