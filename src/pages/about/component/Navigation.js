@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Content from './Content';
 import { connect } from 'react-redux';
-import { NavigationWrapper, NavSection, NavItem } from '../styled';
+import { NavigationWrapper, NavSection, NavItem } from '../style';
 
 class Navigation extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Navigation extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('value');
     this.setState(() => {

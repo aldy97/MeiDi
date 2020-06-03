@@ -47,15 +47,14 @@ export const ContentWrapper = styled.div`
   .title {
     height: 80px;
     line-height: 80px;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: calc(14vw);
+    margin-left: calc(42.3vw);
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 30px;
     color: #228b22;
   }
   .content {
-    width: 60%;
+    width: 40%;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;

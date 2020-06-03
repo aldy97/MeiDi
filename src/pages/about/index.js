@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navigation from './component/Navigation';
 import { connect } from 'react-redux';
-import { AboutImgWrapper } from './styled';
+import { AboutImgWrapper } from './style';
 
 //关于美地：分页面入口
 function About(props) {
