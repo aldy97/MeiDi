@@ -18,13 +18,7 @@ function Content(props) {
         {props.navigation[props.index].content.map((item) => {
           return <p>&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>;
         })}
-        <Carousel
-          stopAutoPlayOnHover
-          slidesPerPage={3}
-          arrows={props.index === 2 ? true : false}
-          autoPlay={props.index === 3 ? 1000 : null}
-          infinite
-        >
+        <Carousel stopAutoPlayOnHover slidesPerPage={3} infinite arrows>
           {props.navigation[props.index].imgUrlList.map((item) => {
             return (
               <PartnerLogoWrapper>
