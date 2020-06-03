@@ -9,8 +9,7 @@ const NavItemDropDown = (props) => {
           <NavItemDropDownItem
             className='navitemdropdownitem'
             onClick={() => {
-              window.location.href = '/about/?value=' + i;
-              console.log('current index is: ' + i);
+              window.location.href = `${props.href}/?value=` + i;
             }}
           >
             {item}

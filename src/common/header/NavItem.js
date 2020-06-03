@@ -11,7 +11,12 @@ function NavItem(props) {
 
   const showDropDown = (show) => {
     if (show) {
-      return <NavItemDropDown dropdown={props.dropdown}></NavItemDropDown>;
+      return (
+        <NavItemDropDown
+          dropdown={props.dropdown}
+          href={props.href}
+        ></NavItemDropDown>
+      );
     }
   };
 

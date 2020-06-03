@@ -9,19 +9,23 @@ const defaultState = {
     {
       name: '业务领域',
       dropDown: ['工程设计', '技术咨询', '施工服务'],
-      href: '',
+      href: '/field',
     },
-    { name: '精品项目', dropDown: ['交付区', '示范区'], href: '' },
-    { name: '新闻资讯', dropDown: ['公司资讯', '行业资讯'], href: '' },
+    { name: '精品项目', dropDown: ['交付区', '示范区'], href: '/projects' },
+    { name: '新闻资讯', dropDown: ['公司资讯', '行业资讯'], href: '/news' },
     {
       name: '加入美地',
       dropDown: ['校园招聘', '社会招聘', '人才理念'],
-      href: '',
+      href: '/join',
     },
-    { name: '联系我们', dropDown: ['公司联系人', '公司地址'], href: '' },
+    {
+      name: '联系我们',
+      dropDown: ['公司联系人', '公司地址'],
+      href: '/contact',
+    },
   ],
 };
 
-export default (state = defaultState, action) => {
+export default (state = defaultState) => {
   return state;
 };
