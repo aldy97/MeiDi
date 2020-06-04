@@ -113,6 +113,18 @@ export const ProjectWrapper = styled.div`
   height: 310px;
   box-shadow: 0px 3px 3px #666;
   border-bottom: 1px solid #d3d3d3;
+  transition: all 0.3s;
+  &.project: hover {
+    transform: scale(1.02);
+    .infosection {
+      .title {
+        color: #228b22;
+      }
+      .desc {
+        color: #228b22;
+      }
+    }
+  }
 `;
 
 export const ImgSection = styled.div`

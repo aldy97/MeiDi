@@ -5,10 +5,6 @@ import { NavItemWrapper } from './style';
 function NavItem(props) {
   const [show, setShow] = useState(false);
 
-  const handleMouseEvent = () => {
-    setShow(!show);
-  };
-
   const showDropDown = (show) => {
     if (show) {
       return (
@@ -22,8 +18,12 @@ function NavItem(props) {
 
   return (
     <NavItemWrapper
-      onMouseEnter={handleMouseEvent}
-      onMouseLeave={handleMouseEvent}
+      onMouseEnter={() => {
+        setShow(!show);
+      }}
+      onMouseLeave={() => {
+        setShow(!show);
+      }}
       className='navitemwrapper'
     >
       {props.item}

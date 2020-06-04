@@ -8,7 +8,7 @@ function SingleProject(props) {
       <ImgSection>
         <img className='project-img' alt='' src={props.imgURL} />
       </ImgSection>
-      <InfoSection>
+      <InfoSection className='infosection'>
         <div className='title'>{props.title}</div>
         <div className='desc'>{props.desc}</div>
       </InfoSection>
