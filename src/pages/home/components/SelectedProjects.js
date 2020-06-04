@@ -9,7 +9,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 function SelectedProjects(props) {
   return (
     <SelectedProjectsWrapper>
-      <div className='sectionTitle'>精品项目</div>
+      <div className='sectiontitle'>精品项目</div>
       <Carousel arrows infinite slidesPerPage={3}>
         {props.projectList.map((item) => {
           return (

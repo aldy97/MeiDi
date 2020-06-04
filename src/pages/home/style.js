@@ -93,7 +93,7 @@ export const SelectedProjectsWrapper = styled.div`
   margin-right: auto;
   width: 95%;
   height: 464px;
-  .sectionTitle {
+  .sectiontitle {
     color: #333;
     width: calc(18vh);
     height: 20%;
@@ -104,7 +104,10 @@ export const SelectedProjectsWrapper = styled.div`
     text-align: center;
     font-size: 24px;
     cursor: pointer;
-    border: 1px solid black;
+    font-weight: bold;
+  }
+  .sectiontitle: hover {
+    color: #228b22;
   }
 `;
 
