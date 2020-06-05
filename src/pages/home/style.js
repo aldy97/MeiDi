@@ -114,15 +114,10 @@ export const SelectedProjectsWrapper = styled.div`
 export const ProjectWrapper = styled.div`
   width: 350px;
   height: 310px;
-  box-shadow: 0px 3px 3px #666;
-  border-bottom: 1px solid #d3d3d3;
-  transition: all 0.3s;
+  border: 1px solid #333;
   &.project: hover {
-    transform: scale(1.02);
     .infosection {
-      .title {
-        color: #228b22;
-      }
+      .title,
       .desc {
         color: #228b22;
       }

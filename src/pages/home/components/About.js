@@ -16,12 +16,15 @@ function About(props) {
     <AboutWrapper>
       <AboutNavWrapper>
         <NavItemWrapper>
-          {props.aboutInfoList.map((item) => {
+          {props.aboutInfoList.map((item, i) => {
             return (
               <AboutNavItem
                 className='aboutnavitem'
                 onMouseEnter={() => {
                   setIndex(item.id);
+                }}
+                onClick={() => {
+                  window.location.href = `/field?value=${i}`;
                 }}
               >
                 {item.title}
