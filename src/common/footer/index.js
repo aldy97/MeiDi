@@ -38,7 +38,7 @@ function Footer() {
               setShow(false);
             }}
           >
-            官方微信
+            微信公众号
           </div>
           <div
             className='aboutus'
