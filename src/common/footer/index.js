@@ -31,7 +31,7 @@ function Footer() {
           </div>
           <div
             className='wechat'
-            onMouseEnter={() => {
+            onMouseOver={() => {
               setShow(true);
             }}
             onMouseLeave={() => {

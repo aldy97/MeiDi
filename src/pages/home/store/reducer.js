@@ -66,7 +66,7 @@ const defaultState = {
     },
     {
       title: '南京铂悦秦淮',
-      desc: '壮观的廊架, 婉约的水景，让人流连忘返。',
+      desc: '壮观的廊架, 婉约的水景，让人流连忘返',
       imgURL: require('../../../static/img/秦淮.jpg'),
     },
   ],
