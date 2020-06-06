@@ -5,7 +5,11 @@ import { AboutTextWrapper } from '../style';
 //三大业务导航所对应的图片加简介
 function AboutText(props) {
   return (
-    <AboutTextWrapper>
+    <AboutTextWrapper
+      onClick={() => {
+        window.location.href = `/field?value=${props.index}`;
+      }}
+    >
       <div className='textWrapper'>
         <div className='text'>{props.aboutInfoList[props.index].desc}</div>
       </div>

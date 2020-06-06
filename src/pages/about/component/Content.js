@@ -12,7 +12,7 @@ function Content(props) {
           return <p>&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>;
         })}
         <Carousel
-          stopAutoPlayOnHover
+          animationSpeed={1000}
           slidesPerPage={3}
           infinite
           arrows={props.index === 2 || props.index === 3 ? true : false}
