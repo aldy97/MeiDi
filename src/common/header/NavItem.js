@@ -23,7 +23,8 @@ function NavItem(props) {
     >
       <div
         onClick={() => {
-          window.location.href = `${props.href}/?value=` + 0;
+          window.location.href =
+            props.href === '/' ? props.href : `${props.href}/?value=` + 0;
         }}
       >
         {props.item}
