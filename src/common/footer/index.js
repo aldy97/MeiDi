@@ -51,7 +51,14 @@ function Footer() {
         </Contact>
         <CopyRights>
           Copyright 2020 ©上海美地园林有限公司 All rights reserved. Powered by
-          Feng Xiong.
+          <span
+            className='fengxiong'
+            onClick={() => {
+              window.location.href = 'http://www.fengxiong.info';
+            }}
+          >
+            &nbsp;Feng Xiong.
+          </span>
         </CopyRights>
       </FooterWrapper>
     </FootSectionWrapper>

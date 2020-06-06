@@ -43,6 +43,10 @@ export const CopyRights = styled.div`
   padding-top: 60px;
   text-align: center;
   color: #dddddd;
+  .fengxiong: hover {
+    cursor: pointer;
+    color: #228b22;
+  }
 `;
 
 export const QRCodeWrapper = styled.div`
