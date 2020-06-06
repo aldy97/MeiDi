@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const FootSectionWrapper = styled.div`
+  width: 100%;
+  height: 100px;
+`;
+
 export const FooterWrapper = styled.div`
   width: 100%;
   height: 100px;
@@ -38,4 +43,18 @@ export const CopyRights = styled.div`
   padding-top: 60px;
   text-align: center;
   color: #dddddd;
+`;
+
+export const QRCodeWrapper = styled.div`
+  width: 130px;
+  height: 130px;
+  object-fit: fill;
+  border: 1px solid black;
+  position: absolute;
+  margin-top: -110px;
+  margin-left: calc(45.2vw);
+  .qrcode {
+    width: 130px;
+    height: 130px;
+  }
 `;
