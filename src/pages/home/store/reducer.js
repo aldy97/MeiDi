@@ -9,7 +9,7 @@ const defaultState = {
     {
       imgURL: require('../../../static/img/homeSlide2.jpg'),
       id: 1,
-      title: '长沙赋山湖',
+      title: '长沙湖山赋',
       desc: '三千年湖湘浩瀚，名岳盛流俊杰若星，道不尽风华万千',
     },
     {

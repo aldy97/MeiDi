@@ -12,7 +12,7 @@ function SelectedProjects(props) {
       <div
         className='sectiontitle'
         onClick={() => {
-          window.location.href = '/projects';
+          window.location.href = '/project';
         }}
       >
         精品项目

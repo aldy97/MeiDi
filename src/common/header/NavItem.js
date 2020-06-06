@@ -7,24 +7,20 @@ function NavItem(props) {
 
   const showDropDown = (show) => {
     if (show) {
-      return (
-        <NavItemDropDown
-          dropdown={props.dropdown}
-          href={props.href}
-        ></NavItemDropDown>
-      );
+      return <NavItemDropDown dropdown={props.dropdown} href={props.href} />;
     }
+  };
+
+  const handleMouseEvent = () => {
+    setShow(!show);
   };
 
   return (
     <NavItemWrapper
-      onMouseEnter={() => {
-        setShow(!show);
-      }}
-      onMouseLeave={() => {
-        setShow(!show);
-      }}
+      onMouseEnter={handleMouseEvent}
+      onMouseLeave={handleMouseEvent}
       className='navitemwrapper'
+      onClick={() => {}}
     >
       {props.item}
       {showDropDown(show)}
