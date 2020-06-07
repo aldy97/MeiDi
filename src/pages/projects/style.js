@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 export const TitleWrapper = styled.div`
-  height: 100px;
+  height: 75px;
   width: 100%;
-  border: 1px solid black;
-  font-size: 22px;
-  padding-left: calc(12.4vw);
-  line-height: 100px;
-  color: #333;
+  font-size: 35px;
+  margin-top: 30px;
+  padding-left: calc(9.8vw);
+  line-height: 75px;
+  color: #666;
 `;
 
 export const BannerWrapper = styled.div`
@@ -20,14 +20,16 @@ export const BannerWrapper = styled.div`
 `;
 
 export const TypeSelectorWrapper = styled.div`
-  height: 50px;
+  height: 75px;
+  width: 50%;
+  margin-left: calc(7.8vw);
 `;
 
 export const TypeSelectorItem = styled.span`
-  height: 50px;
+  height: 75px;
   width: 50px;
-  line-height: 50px;
-  padding-left: calc(12.4vw);
+  line-height: 75px;
+  padding-left: 30px;
   color: #666;
   font-size: 18px;
   &.selected {
@@ -40,7 +42,7 @@ export const TypeSelectorItem = styled.span`
 `;
 
 export const ProjectsSectionWrapper = styled.div`
-  width: 75%;
+  width: 80%;
   height: 100px;
   border: 1px solid black;
   margin-left: auto;
