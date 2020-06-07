@@ -117,8 +117,7 @@ export const ProjectWrapper = styled.div`
   border: 1px solid #333;
   &.project: hover {
     .infosection {
-      .title,
-      .desc {
+      .title {
         color: #228b22;
       }
     }
