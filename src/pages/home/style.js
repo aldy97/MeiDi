@@ -115,6 +115,10 @@ export const ProjectWrapper = styled.div`
   width: 350px;
   height: 310px;
   border: 1px solid #333;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  float: left;
   &.project: hover {
     .infosection {
       .title {
