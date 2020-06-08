@@ -1,6 +1,5 @@
 const defaultState = {
-  bannerImgSrc:
-    'https://lh3.googleusercontent.com/proxy/SjvEKEazLBCgXTuulsTm2SGTqHaNt565xlxPQHSTrzYrUIcIALSLT-xzj8rlB1X5jjDjvTg9oU7IayM6PSuSEpvDY3D8sbnNK_d8qFguWtmrQqAkdGs',
+  bannerImgSrc: require('../../../static/img/cityscape.jpg'),
   SfqList: [
     {
       title: '北辰壹号院',

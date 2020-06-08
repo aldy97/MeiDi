@@ -11,7 +11,7 @@ const defaultState = {
       dropDown: ['工程设计', '技术咨询', '施工服务'],
       href: '/field',
     },
-    { name: '精品项目', dropDown: ['交付区', '示范区'], href: '/projects' },
+    { name: '精品项目', dropDown: [], href: '/projects' },
     { name: '新闻资讯', dropDown: ['公司资讯', '行业资讯'], href: '/news' },
     {
       name: '加入美地',

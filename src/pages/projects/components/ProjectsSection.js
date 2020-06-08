@@ -5,7 +5,7 @@ import { ProjectsSectionWrapper } from '../style';
 
 function ProjectsSection(props) {
   return (
-    <ProjectsSectionWrapper>
+    <ProjectsSectionWrapper height={props.isSelected ? 1020 : 680}>
       {(props.isSelected ? props.SfqList : props.JfqList).map((item) => {
         return (
           <SingleProject

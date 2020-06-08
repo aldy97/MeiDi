@@ -43,7 +43,7 @@ export const TypeSelectorItem = styled.span`
 
 export const ProjectsSectionWrapper = styled.div`
   width: 80%;
-  height: 1030px;
+  height: ${(props) => props.height}px;
   margin-left: auto;
   margin-right: auto;
 `;
