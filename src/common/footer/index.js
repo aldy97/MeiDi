@@ -7,7 +7,7 @@ import {
   CopyRights,
 } from './style';
 
-function Footer() {
+export default function Footer() {
   const [show, setShow] = useState(false);
 
   const showQRCode = (show) => {
@@ -65,5 +65,3 @@ function Footer() {
     </FootSectionWrapper>
   );
 }
-
-export default Footer;

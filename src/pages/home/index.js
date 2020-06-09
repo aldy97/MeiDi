@@ -3,7 +3,7 @@ import Swiper from './components/Swiper';
 import About from './components/About';
 import SelectedProjects from './components/SelectedProjects';
 
-function Home() {
+export default function Home() {
   return (
     <div>
       <Swiper />
@@ -12,5 +12,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

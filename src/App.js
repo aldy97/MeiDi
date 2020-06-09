@@ -10,7 +10,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { GlobalStyle } from './style';
 
-function App() {
+export default function App() {
   return (
     <div className='App'>
       <Provider store={store}>
@@ -31,5 +31,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

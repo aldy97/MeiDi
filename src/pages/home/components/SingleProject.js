@@ -2,7 +2,7 @@ import React from 'react';
 import { ProjectWrapper, ImgSection, InfoSection } from '../style';
 
 //首页精品项目单个轮播item
-function SingleProject(props) {
+export default function SingleProject(props) {
   return (
     <ProjectWrapper className='project'>
       <ImgSection>
@@ -15,5 +15,3 @@ function SingleProject(props) {
     </ProjectWrapper>
   );
 }
-
-export default SingleProject;

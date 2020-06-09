@@ -2,7 +2,7 @@ import React from 'react';
 import { TypeSelectorWrapper, TypeSelectorItem } from '../style';
 
 //项目类型选择：示范区或者交付区
-function TypeSelector(props) {
+export default function TypeSelector(props) {
   return (
     <TypeSelectorWrapper>
       <TypeSelectorItem
@@ -20,5 +20,3 @@ function TypeSelector(props) {
     </TypeSelectorWrapper>
   );
 }
-
-export default TypeSelector;
