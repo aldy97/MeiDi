@@ -18,7 +18,6 @@ function Footer() {
 
   return (
     <FootSectionWrapper>
-      {showQRCode(show)}
       <FooterWrapper>
         <Contact>
           <div
@@ -29,16 +28,18 @@ function Footer() {
           >
             联系我们
           </div>
-          <div
-            className='wechat'
-            onMouseOver={() => {
-              setShow(true);
-            }}
-            onMouseLeave={() => {
-              setShow(false);
-            }}
-          >
-            微信公众号
+          <div className='wechat'>
+            {showQRCode(show)}
+            <div
+              onMouseOver={() => {
+                setShow(true);
+              }}
+              onMouseLeave={() => {
+                setShow(false);
+              }}
+            >
+              微信公众号
+            </div>
           </div>
           <div
             className='aboutus'

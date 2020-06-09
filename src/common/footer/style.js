@@ -55,8 +55,7 @@ export const QRCodeWrapper = styled.div`
   object-fit: fill;
   border: 1px solid black;
   position: absolute;
-  margin-top: -110px;
-  margin-left: calc(45.2vw);
+  margin-top: -120px;
   .qrcode {
     width: 130px;
     height: 130px;
