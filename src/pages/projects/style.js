@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+
 export const TitleWrapper = styled.div`
   height: 75px;
   width: 100%;
   font-size: 35px;
   margin-top: 30px;
-  padding-left: calc(9.8vw);
+  padding-left: calc(10.9vw);
   line-height: 75px;
   color: #666;
 `;
@@ -22,14 +23,14 @@ export const BannerWrapper = styled.div`
 export const TypeSelectorWrapper = styled.div`
   height: 75px;
   width: 50%;
-  margin-left: calc(7.8vw);
+  margin-left: calc(8vw);
 `;
 
 export const TypeSelectorItem = styled.span`
   height: 75px;
   width: 50px;
   line-height: 75px;
-  padding-left: 30px;
+  padding-left: calc(3vw);
   color: #666;
   font-size: 18px;
   &.selected {

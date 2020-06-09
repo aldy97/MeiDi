@@ -3,16 +3,17 @@ import SingleProject from '../../home/components/SingleProject';
 import { connect } from 'react-redux';
 import { ProjectsSectionWrapper } from '../style';
 
+//精品项目页面单个项目item
 function ProjectsSection(props) {
   return (
-    <ProjectsSectionWrapper height={props.isSelected ? 1020 : 680}>
+    <ProjectsSectionWrapper height={props.isSelected ? 1040 : 700}>
       {(props.isSelected ? props.SfqList : props.JfqList).map((item) => {
         return (
           <SingleProject
             imgURL={item.imgURL}
             title={item.title}
             desc={item.desc}
-          ></SingleProject>
+          />
         );
       })}
     </ProjectsSectionWrapper>

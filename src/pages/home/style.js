@@ -112,13 +112,15 @@ export const SelectedProjectsWrapper = styled.div`
 `;
 
 export const ProjectWrapper = styled.div`
-  width: 350px;
+  width: calc(24.3vw);
   height: 310px;
-  border: 1px solid #333;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  border: 1px solid grey;
   cursor: pointer;
   float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 2px #888888;
   &.project: hover {
     .infosection {
       .title {
@@ -132,7 +134,7 @@ export const ImgSection = styled.div`
   height: 200px;
   .project-img {
     height: 200px;
-    width: 350px;
+    width: calc(24.3vw);
     object-fit: cover;
   }
 `;
