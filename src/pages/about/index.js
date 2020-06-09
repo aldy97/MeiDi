@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Navigation from './component/Navigation';
 import { connect } from 'react-redux';
-import { AboutImgWrapper } from './style';
+import { BannerImgWrapper } from './style';
 
 //关于美地：分页面入口
 function About(props) {
@@ -11,9 +11,9 @@ function About(props) {
 
   return (
     <div>
-      <AboutImgWrapper>
-        <img alt='' className='aboutImg' src={props.aboutImg} />
-      </AboutImgWrapper>
+      <BannerImgWrapper>
+        <img alt='' className='bannerImg' src={props.aboutImg} />
+      </BannerImgWrapper>
       <Navigation />
     </div>
   );

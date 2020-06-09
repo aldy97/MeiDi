@@ -8,7 +8,7 @@ const defaultState = {
     },
     {
       name: '业务领域',
-      dropDown: ['工程设计', '技术咨询', '施工服务'],
+      dropDown: ['地产景观', '市政工程', '苗木基地'],
       href: '/field',
     },
     { name: '精品项目', dropDown: [], href: '/projects' },

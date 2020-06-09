@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const AboutImgWrapper = styled.div`
+export const BannerImgWrapper = styled.div`
   width: 100%;
   height: 300px;
-  .aboutImg {
+  .bannerImg {
     width: 100%;
     height: 300px;
     object-fit: cover;
