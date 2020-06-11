@@ -27,7 +27,7 @@ export const NavigationWrapper = styled.div`
 export const NavItemWrapper = styled.div`
   width: 14.28%;
   float: left;
-  height: 92px;
+  height: 95px;
   text-align: center;
   cursor: pointer;
   font-size: 16px;
@@ -38,7 +38,8 @@ export const NavItemWrapper = styled.div`
     color: #fff;
   }
   &.selected {
-    border-bottom: 3px solid #228b22;
+    background: #228b22;
+    color: #fff;
   }
 `;
 
