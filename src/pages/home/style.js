@@ -123,12 +123,17 @@ export const ProjectWrapper = styled.div`
   margin-right: 15px;
   margin-bottom: 30px;
   box-shadow: 2px 2px 2px #888888;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: 0.3s;
   &.project: hover {
     .infosection {
       .title {
         color: #228b22;
       }
     }
+    transform: scale(1.02);
   }
 `;
 
