@@ -19,7 +19,7 @@ function NavItem(props) {
     <NavItemWrapper
       onMouseEnter={handleMouseEvent}
       onMouseLeave={handleMouseEvent}
-      className='selected'
+      className={'/' + props.selected === props.href ? 'selected' : null}
     >
       <div
         onClick={() => {

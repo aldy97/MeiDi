@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavItem from './NavItem';
 import { connect } from 'react-redux';
 import { HeaderWrapper, ImgWrapper, NavigationWrapper } from './style';
 
 const Header = (props) => {
+  const [selected, isSelected] = useState('/');
+
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.pathname);
-    const myParam = urlParams;
+    const myParam = urlParams.toString().replace('%2F', '').replace('%2F=', '');
     console.log('myParam: ' + myParam);
+    isSelected(myParam);
   });
 
   return (
@@ -31,6 +34,7 @@ const Header = (props) => {
               key={i}
               dropdown={item.dropDown}
               href={item.href}
+              selected={selected}
             ></NavItem>
           );
         })}
