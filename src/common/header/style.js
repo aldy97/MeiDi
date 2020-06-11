@@ -34,7 +34,7 @@ export const NavItemWrapper = styled.div`
   color: #333;
   transition: 0.3s;
   &: hover {
-    background: #228b22;
+    background: #32cd32;
     color: #fff;
   }
   &.selected {
