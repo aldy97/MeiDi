@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavItem from './NavItem';
 import { connect } from 'react-redux';
 import { HeaderWrapper, ImgWrapper, NavigationWrapper } from './style';
 
 const Header = (props) => {
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.pathname);
+    const myParam = urlParams;
+    console.log('myParam: ' + myParam);
+  });
+
   return (
     <HeaderWrapper>
       <ImgWrapper>
