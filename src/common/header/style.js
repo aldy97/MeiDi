@@ -56,7 +56,7 @@ export const NavItemDropDownWrapper = styled.div`
 
 export const NavItemDropDownItem = styled.div`
   width: calc(9.28vw);
-  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
   font-size: 14px;
   height: 35px;
   line-height: 35px;

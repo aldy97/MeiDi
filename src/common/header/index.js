@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { HeaderWrapper, ImgWrapper, NavigationWrapper } from './style';
 
 const Header = (props) => {
-  const [selected, isSelected] = useState('/');
+  const [selected, isSelected] = useState();
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.pathname);
