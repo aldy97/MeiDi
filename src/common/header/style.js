@@ -32,6 +32,7 @@ export const NavItemWrapper = styled.div`
   cursor: pointer;
   font-size: 16px;
   color: #333;
+  transition: 0.3s;
   &.navitemwrapper: hover {
     background: #228b22;
     color: #fff;

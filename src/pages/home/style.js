@@ -53,6 +53,7 @@ export const AboutNavItem = styled.div`
   cursor: pointer;
   border-left: 1px solid #e7e7e7;
   border-right: 1px solid #e7e7e7;
+  transition: 0.3s;
   &.aboutnavitem: hover {
     background: #a0a0a0;
     color: white;
@@ -106,6 +107,7 @@ export const SelectedProjectsWrapper = styled.div`
     cursor: pointer;
     font-weight: bold;
   }
+  transition: 0.3s;
   .sectiontitle: hover {
     color: #228b22;
   }

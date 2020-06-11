@@ -33,6 +33,7 @@ export const NavItem = styled.div`
   text-align: center;
   color: #666666;
   cursor: pointer;
+  transition: 0.3s;
   &.navitem: hover {
     background: #228b22;
     color: #fff;

@@ -31,6 +31,7 @@ export const NavItem = styled.div`
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
   cursor: pointer;
+  transition: 0.3s;
   &.navitem:hover {
     background: #228b22;
     color: #fff;

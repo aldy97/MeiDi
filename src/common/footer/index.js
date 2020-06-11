@@ -58,7 +58,7 @@ export default function Footer() {
               window.location.href = 'http://www.fengxiong.info';
             }}
           >
-            &nbsp;Feng Xiong.
+            <a title='访问熊枫个人主页'>&nbsp;Feng Xiong.</a>
           </span>
         </CopyRights>
       </FooterWrapper>
