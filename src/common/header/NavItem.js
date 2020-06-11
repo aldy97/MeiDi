@@ -19,7 +19,7 @@ function NavItem(props) {
     <NavItemWrapper
       onMouseEnter={handleMouseEvent}
       onMouseLeave={handleMouseEvent}
-      className='navitemwrapper'
+      className='selected'
     >
       <div
         onClick={() => {

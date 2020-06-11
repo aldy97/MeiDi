@@ -27,15 +27,18 @@ export const NavigationWrapper = styled.div`
 export const NavItemWrapper = styled.div`
   width: 14.28%;
   float: left;
-  height: 95px;
+  height: 92px;
   text-align: center;
   cursor: pointer;
   font-size: 16px;
   color: #333;
   transition: 0.3s;
-  &.navitemwrapper: hover {
+  &: hover {
     background: #228b22;
     color: #fff;
+  }
+  &.selected {
+    border-bottom: 3px solid #228b22;
   }
 `;
 
