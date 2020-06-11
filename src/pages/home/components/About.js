@@ -24,7 +24,7 @@ function About(props) {
                   setIndex(item.id);
                 }}
                 onClick={() => {
-                  window.location.href = `/field?value=${i}`;
+                  window.location.href = '/field/?value=' + i;
                 }}
               >
                 {item.title}

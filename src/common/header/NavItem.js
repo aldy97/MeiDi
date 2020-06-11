@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavItemDropDown from './NavItemDropDown';
 import { NavItemWrapper } from './style';
 
@@ -15,11 +15,21 @@ function NavItem(props) {
     setShow(!show);
   };
 
+  useEffect(() => {
+    console.log('props.href: ' + props.href);
+    console.log('props.selected: /' + props.selected);
+  });
+
   return (
     <NavItemWrapper
       onMouseEnter={handleMouseEvent}
       onMouseLeave={handleMouseEvent}
-      className={'/' + props.selected === props.href ? 'selected' : null}
+      className={
+        '/' + props.selected === props.href ||
+        '/' + props.selected === props.href + '='
+          ? 'selected'
+          : null
+      }
     >
       <div
         onClick={() => {

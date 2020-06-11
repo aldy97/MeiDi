@@ -4,13 +4,13 @@ import { connect } from 'react-redux';
 import { HeaderWrapper, ImgWrapper, NavigationWrapper } from './style';
 
 const Header = (props) => {
-  const [selected, isSelected] = useState();
+  const [selected, setSelected] = useState();
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.pathname);
     const myParam = urlParams.toString().replace('%2F', '').replace('%2F=', '');
-    console.log('myParam: ' + myParam);
-    isSelected(myParam);
+    console.log('Selected: ' + myParam);
+    setSelected(myParam);
   });
 
   return (
