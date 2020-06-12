@@ -17,19 +17,4 @@ export const GlobalStyleFont = createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-jingdianjingguan:before {
-  content: "\e60d";
-}
-
-.icon-gongcheng:before {
-  content: "\e6a4";
-}
-
-.icon-shu8:before {
-  content: "\e621";
-}
-
-.icon-erjiyemianjiantou01:before {
-  content: "\e616";
 }`;
