@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const FootSectionWrapper = styled.div`
-  width: 100%;
-  height: 100px;
-  font-size: calc(1.2vw);
-`;
-
 export const FooterWrapper = styled.div`
   width: 100%;
   height: 100px;
@@ -44,6 +38,9 @@ export const CopyRights = styled.div`
   padding-top: 60px;
   text-align: center;
   color: #dddddd;
+  @media (max-width: 800px) {
+    display: none;
+  }
   .fengxiong: hover {
     cursor: pointer;
     color: #228b22;
