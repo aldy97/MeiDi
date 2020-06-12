@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import store from './store/index.js';
 import Header from './common/header/index.js';
 import Footer from './common/footer/index.js';
@@ -9,25 +9,29 @@ import Field from './pages/field/index';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { GlobalStyle } from './style';
+import { GlobalStyleFont } from './static/iconfont/iconfont';
 
 export default function App() {
   return (
-    <div className='App'>
-      <Provider store={store}>
-        <div>
-          <Header />
-          <BrowserRouter>
-            <div>
-              <Route path='/' exact component={Home}></Route>
-              <Route path='/about' exact component={About}></Route>
-              <Route path='/projects' exact component={Projects}></Route>
-              <Route path='/field' exact component={Field}></Route>
-            </div>
-          </BrowserRouter>
-          <GlobalStyle />
-          <Footer />
-        </div>
-      </Provider>
-    </div>
+    <Fragment>
+      <div className='App'>
+        <Provider store={store}>
+          <div>
+            <Header />
+            <BrowserRouter>
+              <div>
+                <Route path='/' exact component={Home}></Route>
+                <Route path='/about' exact component={About}></Route>
+                <Route path='/projects' exact component={Projects}></Route>
+                <Route path='/field' exact component={Field}></Route>
+              </div>
+            </BrowserRouter>
+            <GlobalStyle />
+            <GlobalStyleFont />
+            <Footer />
+          </div>
+        </Provider>
+      </div>
+    </Fragment>
   );
 }
