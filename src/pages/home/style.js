@@ -58,6 +58,9 @@ export const AboutNavItem = styled.div`
     background: #a0a0a0;
     color: white;
   }
+  .iconfont {
+    display: inline-box;
+  }
 `;
 
 export const AboutTextWrapper = styled.div`

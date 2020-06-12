@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import store from './store/index.js';
 import Header from './common/header/index.js';
 import Footer from './common/footer/index.js';
@@ -13,25 +13,23 @@ import { GlobalStyleFont } from './static/iconfont/iconfont';
 
 export default function App() {
   return (
-    <Fragment>
-      <div className='App'>
-        <Provider store={store}>
-          <div>
-            <Header />
-            <BrowserRouter>
-              <div>
-                <Route path='/' exact component={Home}></Route>
-                <Route path='/about' exact component={About}></Route>
-                <Route path='/projects' exact component={Projects}></Route>
-                <Route path='/field' exact component={Field}></Route>
-              </div>
-            </BrowserRouter>
-            <GlobalStyle />
-            <GlobalStyleFont />
-            <Footer />
-          </div>
-        </Provider>
-      </div>
-    </Fragment>
+    <div className='App'>
+      <Provider store={store}>
+        <div>
+          <Header />
+          <BrowserRouter>
+            <div>
+              <Route path='/' exact component={Home}></Route>
+              <Route path='/about' exact component={About}></Route>
+              <Route path='/projects' exact component={Projects}></Route>
+              <Route path='/field' exact component={Field}></Route>
+            </div>
+          </BrowserRouter>
+          <GlobalStyle />
+          <GlobalStyleFont />
+          <Footer />
+        </div>
+      </Provider>
+    </div>
   );
 }
