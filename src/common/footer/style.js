@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const FootSectionWrapper = styled.div`
   width: 100%;
   height: 100px;
+  font-size: calc(1.2vw);
 `;
 
 export const FooterWrapper = styled.div`

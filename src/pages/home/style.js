@@ -37,14 +37,13 @@ export const AboutNavWrapper = styled.div`
 
 export const NavItemWrapper = styled.div`
   height: 77px;
-  width: 1210px;
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(84vw);
+  margin-left: calc(8.4vw);
 `;
 
 export const AboutNavItem = styled.div`
   height: 77px;
-  width: 400px;
+  width: calc(27.6vw);
   float: left;
   color: #333;
   border-right: 1px solid black;
@@ -64,7 +63,7 @@ export const AboutNavItem = styled.div`
 `;
 
 export const AboutTextWrapper = styled.div`
-  width: 1210px;
+  width: calc(83.4vw);
   height: 493px;
   margin-left: auto;
   margin-right: auto;
@@ -72,11 +71,11 @@ export const AboutTextWrapper = styled.div`
   .background {
     height: 493px;
     object-fit: cover;
-    width: 1206px;
+    width: calc(83.4vw);
   }
   .textWrapper {
     margin-top: 443px;
-    width: 1206px;
+    width: calc(83.4vw);
     background: black;
     height: 50px;
     opacity: 0.6;
