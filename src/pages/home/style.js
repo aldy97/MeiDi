@@ -36,16 +36,15 @@ export const AboutNavWrapper = styled.div`
 `;
 
 export const NavItemWrapper = styled.div`
-  height: 77px;
-  width: calc(84vw);
-  margin-left: calc(8.4vw);
+  width: calc(83.3vw);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 `;
 
 export const AboutNavItem = styled.div`
-  height: 77px;
-  width: calc(27.6vw);
-  float: left;
   color: #333;
+  flex: 1;
   border-right: 1px solid black;
   line-height: 77px;
   text-align: center;
