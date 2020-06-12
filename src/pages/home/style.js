@@ -67,13 +67,13 @@ export const AboutTextWrapper = styled.div`
   margin-right: auto;
   cursor: pointer;
   .background {
-    width: 1205px;
     height: 493px;
     object-fit: cover;
+    width: 1206px;
   }
   .textWrapper {
     margin-top: 443px;
-    width: 1205px;
+    width: 1206px;
     background: black;
     height: 50px;
     opacity: 0.6;
