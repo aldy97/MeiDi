@@ -18,6 +18,7 @@ class Field extends Component {
   }
 
   componentDidMount() {
+    document.title = '业务领域';
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('value');
     console.log('myParam:' + myParam);
