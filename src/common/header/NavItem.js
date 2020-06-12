@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import NavItemDropDown from './NavItemDropDown';
 import { NavItemWrapper } from './style';
 
-function NavItem(props) {
+export default function NavItem(props) {
   const [show, setShow] = useState(false);
 
   const showDropDown = (show) => {
@@ -43,5 +43,3 @@ function NavItem(props) {
     </NavItemWrapper>
   );
 }
-
-export default NavItem;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavItemDropDownWrapper, NavItemDropDownItem } from './style';
 
-const NavItemDropDown = (props) => {
+export default function NavItemDropDown(props) {
   return (
     <NavItemDropDownWrapper>
       {props.dropdown.map((item, i) => {
@@ -18,6 +18,4 @@ const NavItemDropDown = (props) => {
       })}
     </NavItemDropDownWrapper>
   );
-};
-
-export default NavItemDropDown;
+}
