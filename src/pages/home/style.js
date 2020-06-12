@@ -96,6 +96,7 @@ export const SelectedProjectsWrapper = styled.div`
   width: 95%;
   height: 464px;
   .sectiontitle {
+    display: block;
     color: #333;
     width: calc(18vh);
     height: 20%;

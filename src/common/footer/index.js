@@ -14,14 +14,9 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <Contact>
-        <div
-          className='contactus'
-          onClick={() => {
-            window.location.href = '/contact/?value=0';
-          }}
-        >
+        <a className='contactus' href='/contact/?value=0'>
           联系我们
-        </div>
+        </a>
         <div className='wechat'>
           {showQRCode(show)}
           <div
@@ -35,25 +30,15 @@ export default function Footer() {
             微信公众号
           </div>
         </div>
-        <div
-          className='aboutus'
-          onClick={() => {
-            window.location.href = '/about/?value=0';
-          }}
-        >
+        <a className='aboutus' href='/about/?value=0'>
           关于美地
-        </div>
+        </a>
       </Contact>
       <CopyRights>
         Copyright 2020 ©上海美地园林有限公司 All rights reserved. Powered by
-        <span
-          className='fengxiong'
-          onClick={() => {
-            window.location.href = 'http://www.fengxiong.info';
-          }}
-        >
-          <a title='访问熊枫个人主页'>&nbsp;Feng Xiong.</a>
-        </span>
+        <a className='fengxiong' href='http://www.fengxiong.info'>
+          &nbsp;Feng Xiong.
+        </a>
       </CopyRights>
     </FooterWrapper>
   );

@@ -23,6 +23,9 @@ export const Contact = styled.div`
     line-height: 50px;
     text-align: center;
   }
+  .aboutus {
+    color: #dddddd;
+  }
   .contactus: hover {
     color: #228b22;
   }
@@ -38,8 +41,8 @@ export const CopyRights = styled.div`
   padding-top: 60px;
   text-align: center;
   color: #dddddd;
-  @media (max-width: 800px) {
-    display: none;
+  .fengxiong {
+    color: #dddddd;
   }
   .fengxiong: hover {
     cursor: pointer;

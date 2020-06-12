@@ -9,14 +9,9 @@ import '@brainhubeu/react-carousel/lib/style.css';
 function SelectedProjects(props) {
   return (
     <SelectedProjectsWrapper>
-      <div
-        className='sectiontitle'
-        onClick={() => {
-          window.location.href = '/projects/?value=0';
-        }}
-      >
+      <a className='sectiontitle' href='/projects/?value=0'>
         精品项目
-      </div>
+      </a>
       <Carousel arrows infinite slidesPerPage={3}>
         {props.projectList.map((item) => {
           return (
