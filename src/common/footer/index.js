@@ -35,7 +35,7 @@ export default function Footer() {
         </a>
       </Contact>
       <CopyRights>
-        Copyright 2020 ©上海美地园林有限公司 All rights reserved. Powered by
+        Copyright 2020 ©上海美地园林有限公司 All rights reserved. Author:
         <a className='fengxiong' href='http://www.fengxiong.info'>
           &nbsp;Feng Xiong.
         </a>
