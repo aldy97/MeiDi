@@ -19,11 +19,12 @@ export const NavItemWrapper = styled.div`
   width: 756px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
 `;
 
 export const NavItem = styled.div`
   height: 83px;
-  width: 250px;
+  flex: 1;
   text-align: center;
   float: left;
   line-height: 83px;
@@ -39,8 +40,7 @@ export const NavItem = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  height: 300px;
-  width: 50%;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
   .title {
@@ -52,5 +52,6 @@ export const TextWrapper = styled.div`
   }
   .spec {
     color: #666666;
+    margin-bottom: 30px;
   }
 `;

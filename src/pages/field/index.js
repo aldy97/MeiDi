@@ -21,11 +21,9 @@ class Field extends Component {
     document.title = '业务领域';
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('value');
-    console.log('myParam:' + myParam);
     this.setState(() => {
       return { index: myParam };
     });
-    console.log('state: ' + this.state.index);
   }
 
   render() {
