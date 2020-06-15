@@ -11,7 +11,7 @@ const Header = (props) => {
     const myParam = urlParams.toString().replace('%2F', '').replace('%2F=', '');
     console.log('Selected: ' + myParam);
     setSelected(myParam);
-  });
+  }, []);
 
   return (
     <HeaderWrapper>

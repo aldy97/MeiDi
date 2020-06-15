@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const TitleWrapper = styled.div`
   height: 75px;
-  width: 1126px;
+  width: 1122px;
   font-size: 35px;
   margin-top: 30px;
   margin-left: auto;
