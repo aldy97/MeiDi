@@ -2,13 +2,16 @@ import styled from 'styled-components';
 
 export const TitleWrapper = styled.div`
   height: 75px;
-  width: 1122px;
+  width: 1152px;
   font-size: 35px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   line-height: 75px;
   color: #666;
+  .title {
+    margin-left: 15px;
+  }
 `;
 
 export const BannerWrapper = styled.div`
@@ -23,17 +26,21 @@ export const BannerWrapper = styled.div`
 
 export const TypeSelectorWrapper = styled.div`
   height: 75px;
-  width: 1122px;
+  width: 1152px;
   margin-left: auto;
   margin-right: auto;
 `;
 
-export const TypeSelectorItem = styled.span`
+export const TypeSelectorItem = styled.div`
   height: 75px;
-  width: 50px;
+  display: inline-block;
   line-height: 75px;
   color: #666;
   font-size: 18px;
+  .Sfq {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
   &.selected {
     color: #228b22;
     font-weight: bold;

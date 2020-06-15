@@ -9,7 +9,7 @@ export default function TypeSelector(props) {
         onClick={props.handleClick1}
         className={props.isSelected ? 'selected' : 'notSelected'}
       >
-        示范区&nbsp;&nbsp;&nbsp;
+        <div className='Sfq'>示范区</div>
       </TypeSelectorItem>
       <TypeSelectorItem
         onClick={props.handleClick2}

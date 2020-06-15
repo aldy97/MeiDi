@@ -29,7 +29,9 @@ function Projects(props) {
       <BannerWrapper>
         <img className='bannerimg' src={props.bannerImgSrc} alt='' />
       </BannerWrapper>
-      <TitleWrapper>精品项目</TitleWrapper>
+      <TitleWrapper>
+        <div className='title'>精品项目</div>
+      </TitleWrapper>
       <TypeSelector
         isSelected={isSelected}
         handleClick1={handleClick1}
