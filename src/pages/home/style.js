@@ -116,7 +116,7 @@ export const SelectedProjectsWrapper = styled.div`
 `;
 
 export const ProjectWrapper = styled.div`
-  width: calc(24.3vw);
+  width: 350px;
   height: 310px;
   border: 1px solid grey;
   cursor: pointer;
@@ -143,7 +143,7 @@ export const ImgSection = styled.div`
   height: 200px;
   .project-img {
     height: 200px;
-    width: calc(24.3vw);
+    width: 350px;
     object-fit: cover;
   }
 `;

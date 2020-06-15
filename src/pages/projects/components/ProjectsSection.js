@@ -3,7 +3,7 @@ import SingleProject from '../../home/components/SingleProject';
 import { connect } from 'react-redux';
 import { ProjectsSectionWrapper } from '../style';
 
-//精品项目页面单个项目item
+//精品项目页面项目列表
 function ProjectsSection(props) {
   return (
     <ProjectsSectionWrapper height={props.isSelected ? 1040 : 700}>

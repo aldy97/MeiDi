@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const TitleWrapper = styled.div`
   height: 75px;
-  width: 100%;
+  width: 1126px;
   font-size: 35px;
   margin-top: 30px;
-  padding-left: calc(10.9vw);
+  margin-left: auto;
+  margin-right: auto;
   line-height: 75px;
   color: #666;
 `;
@@ -22,15 +23,15 @@ export const BannerWrapper = styled.div`
 
 export const TypeSelectorWrapper = styled.div`
   height: 75px;
-  width: 50%;
-  margin-left: calc(8vw);
+  width: 1122px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const TypeSelectorItem = styled.span`
   height: 75px;
   width: 50px;
   line-height: 75px;
-  padding-left: calc(3vw);
   color: #666;
   font-size: 18px;
   &.selected {
@@ -43,8 +44,10 @@ export const TypeSelectorItem = styled.span`
 `;
 
 export const ProjectsSectionWrapper = styled.div`
-  width: 80%;
-  height: ${(props) => props.height}px;
+  width: 1152px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
   margin-left: auto;
   margin-right: auto;
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import { connect } from 'react-redux';
-import { ContentWrapper, PartnerLogoWrapper } from '../style';
+import { ContentWrapper, PartnerLogoWrapper, CarouselWrapper } from '../style';
 
 function Content(props) {
   return (
@@ -11,20 +11,21 @@ function Content(props) {
         {props.navigation[props.index].content.map((item) => {
           return <p>&nbsp;&nbsp;&nbsp;&nbsp;{item}</p>;
         })}
-        <Carousel
-          animationSpeed={1000}
-          slidesPerPage={3}
-          infinite
-          arrows={props.index === 2 || props.index === 3 ? true : false}
-        >
-          {props.navigation[props.index].imgUrlList.map((item) => {
-            return (
-              <PartnerLogoWrapper>
-                <img alt='' className='partner-logo' src={item} />
-              </PartnerLogoWrapper>
-            );
-          })}
-        </Carousel>
+        <CarouselWrapper>
+          <Carousel
+            slidesPerPage={3}
+            infinite
+            arrows={props.index === 2 || props.index === 3 ? true : false}
+          >
+            {props.navigation[props.index].imgUrlList.map((item) => {
+              return (
+                <PartnerLogoWrapper>
+                  <img alt='' className='partner-logo' src={item} />
+                </PartnerLogoWrapper>
+              );
+            })}
+          </Carousel>
+        </CarouselWrapper>
       </div>
     </ContentWrapper>
   );

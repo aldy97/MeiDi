@@ -12,7 +12,6 @@ export const BannerImgWrapper = styled.div`
 
 export const NavigationWrapper = styled.div`
   width: 100%;
-  height: 500px;
   background: #dcdcdc;
 `;
 
@@ -41,9 +40,7 @@ export const NavItem = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  padding-top: 40px;
   width: 100%;
-  height: 400px;
   background: #fff;
   .title {
     height: 80px;
@@ -56,14 +53,15 @@ export const ContentWrapper = styled.div`
   }
   .content {
     width: 40%;
-    margin-top: 20px;
+    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
     color: #666;
-    p {
-      padding-bottom: 10px;
-    }
   }
+`;
+
+export const CarouselWrapper = styled.div`
+  margin-top: 30px;
 `;
 
 export const PartnerLogoWrapper = styled.div`
