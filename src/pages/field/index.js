@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   FieldWrapper,
   NavigationWrapper,
@@ -8,61 +8,50 @@ import {
 } from './style';
 import { BannerImgWrapper } from '../about/style';
 import { connect } from 'react-redux';
-//分页面：业务领域
-class Field extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 0,
-    };
-  }
 
-  componentDidMount() {
-    document.title = '业务领域';
+//分页面：业务领域
+function Field(props) {
+  const [index, setIndex] = useState(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('value');
-    this.setState(() => {
-      return { index: myParam };
-    });
-  }
+    return myParam;
+  });
 
-  render() {
-    return (
-      <FieldWrapper>
-        <BannerImgWrapper>
-          <img className='bannerImg' src={this.props.fieldBannerImg} alt='' />
-        </BannerImgWrapper>
-        <NavigationWrapper>
-          <NavItemWrapper>
-            {this.props.navItemList[2].dropDown.map((item, i) => {
-              return (
-                <NavItem
-                  className='navitem'
-                  key={i}
-                  onClick={() => {
-                    this.setState(() => {
-                      return { index: i };
-                    });
-                  }}
-                >
-                  {item}
-                </NavItem>
-              );
-            })}
-          </NavItemWrapper>
-        </NavigationWrapper>
-        <TextWrapper>
-          <div className='title'>
-            {this.props.navItemList[2].dropDown[this.state.index]}
-          </div>
-          <div className='spec'>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            {this.props.aboutInfoList[this.state.index].spec}
-          </div>
-        </TextWrapper>
-      </FieldWrapper>
-    );
-  }
+  useEffect(() => {
+    document.title = '业务领域';
+  });
+
+  return (
+    <FieldWrapper>
+      <BannerImgWrapper>
+        <img className='bannerImg' src={props.fieldBannerImg} alt='' />
+      </BannerImgWrapper>
+      <NavigationWrapper>
+        <NavItemWrapper>
+          {props.navItemList[2].dropDown.map((item, i) => {
+            return (
+              <NavItem
+                className='navitem'
+                key={i}
+                onClick={() => {
+                  setIndex(i);
+                }}
+              >
+                {item}
+              </NavItem>
+            );
+          })}
+        </NavItemWrapper>
+      </NavigationWrapper>
+      <TextWrapper>
+        <div className='title'>{props.navItemList[2].dropDown[index]}</div>
+        <div className='spec'>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          {props.aboutInfoList[index].spec}
+        </div>
+      </TextWrapper>
+    </FieldWrapper>
+  );
 }
 
 const mapState = (state) => {

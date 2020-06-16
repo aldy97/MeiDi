@@ -1,48 +1,36 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Content from './Content';
 import { connect } from 'react-redux';
 import { NavigationWrapper, NavSection, NavItem } from '../style';
 
-class Navigation extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 0,
-    };
-  }
-
-  componentDidMount() {
+//关于美地分页内容板块+内容
+function Navigation(props) {
+  const [index, setIndex] = useState(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const myParam = urlParams.get('value');
-    this.setState(() => {
-      return { index: myParam };
-    });
-  }
+    return myParam;
+  });
 
-  render() {
-    return (
-      <NavigationWrapper>
-        <NavSection>
-          {this.props.navigation.map((item) => {
-            return (
-              <NavItem
-                className='navitem'
-                key={item.id}
-                onClick={() => {
-                  this.setState(() => {
-                    return { index: item.id };
-                  });
-                }}
-              >
-                {item.title}
-              </NavItem>
-            );
-          })}
-        </NavSection>
-        <Content index={this.state.index}></Content>
-      </NavigationWrapper>
-    );
-  }
+  return (
+    <NavigationWrapper>
+      <NavSection>
+        {props.navigation.map((item) => {
+          return (
+            <NavItem
+              className='navitem'
+              key={item.id}
+              onClick={() => {
+                setIndex(item.id);
+              }}
+            >
+              {item.title}
+            </NavItem>
+          );
+        })}
+      </NavSection>
+      <Content index={index}></Content>
+    </NavigationWrapper>
+  );
 }
 
 const mapState = (state) => {
