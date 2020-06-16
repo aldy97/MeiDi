@@ -97,21 +97,24 @@ export const SelectedProjectsWrapper = styled.div`
   height: 464px;
   .sectiontitle {
     display: block;
-    color: #333;
+    color: #666;
     width: calc(18vh);
-    height: 20%;
+    height: 70px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    line-height: calc(12.5vh);
+    line-height: 90px;
     text-align: center;
     font-size: 24px;
     cursor: pointer;
     font-weight: bold;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
   }
   transition: 0.3s;
   .sectiontitle: hover {
-    color: #228b22;
+    border-bottom: 10px solid #228b22;
   }
 `;
 
