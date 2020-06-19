@@ -108,13 +108,13 @@ export const SelectedProjectsWrapper = styled.div`
     font-size: 24px;
     cursor: pointer;
     font-weight: bold;
-    border-bottom: 10px solid transparent;
+    border-bottom: 7px solid transparent;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
+    transition: all 0.5s;
   }
-  transition: 0.3s;
   .sectiontitle: hover {
-    border-bottom: 10px solid #228b22;
+    border-bottom: 7px solid #228b22;
   }
 `;
 
